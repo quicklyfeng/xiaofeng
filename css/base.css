@@ -1,0 +1,36 @@
+/* 公共样式表 */
+/* 解决高度塌陷和外边距重叠问题 */
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 让所有的列表前的圆点消失 */
+li{
+    list-style: none;
+}
+em,
+i{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* 设置为CSS3盒子模型 */
+    box-sizing: border-box;
+}
+/* 给整个容器设置一个宽度与字体 */
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+input,button{
+    /* 默认的灰色边框去掉 */
+    border: 0;
+    outline: none;
+}
